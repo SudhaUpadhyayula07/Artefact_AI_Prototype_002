@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #5E60CE;
+    --color-secondary: #7B6DFF;
+    --color-tertiary: #B794F4;
+    --color-light-accent: #E0AAFF;
+    --color-background: #F8F6FF;
+    --color-surface: #FFFFFF;
+    --color-text: #1C192E;
+    --color-text-muted: #534D72;
+    --color-border: #E8E2F7;
+    --color-success: #16A34A;
+    --color-warning: #B45309;
+    --color-error: #DC2626;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F8F6FF;
+    color: #1C192E;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar in #B794F4 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F6FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B794F4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7B6DFF;
+}
+
+/* Focus ring accessibility */
+*:focus-visible {
+  outline: 2px solid #7B6DFF;
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Artefact.AI",
+  "description": "One source in, every selected format out. Transform articles, documents, audio, video, and prompts into validated, fingerprinted communication outputs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
